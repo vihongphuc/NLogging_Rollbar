@@ -1,0 +1,1454 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:Configuration.Advanced.ConfigurationProviderExtensions">
+            <summary>
+            Provides extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Boolean"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.DateTime"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Decimal"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int16"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int32"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int64"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.String"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Uri"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetString(Configuration.IConfigurationProvider,System.String,System.Object[])">
+            <summary>
+            Gets and converts the application setting value to its formatted <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="args">A <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+            <returns>Returns a formatted <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetString(Configuration.IConfigurationProvider,System.String,System.IFormatProvider,System.Object[])">
+            <summary>
+            Gets and converts the application setting value to its formatted <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <param name="args">A <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+            <returns>Returns a formatted <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetBoolean(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts application setting value to its <see cref="T:System.Boolean"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Boolean"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDateTime(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDateTime(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDateTime(Configuration.IConfigurationProvider,System.String,System.Globalization.DateTimeStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="styles">
+            A bitwise combination of the enumeration values that indicates the style elements that can be present in  the application setting value
+            for the parse operation to succeed and that defines how to interpret the parsed date in relation to the current time zone or the current
+            date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None"/>.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDecimal(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDecimal(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDecimal(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDecimal(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt16(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt16(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt16(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt16(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt32(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt32(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt32(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt32(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt64(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt64(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt64(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt64(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetString(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetUri(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetUri(Configuration.IConfigurationProvider,System.String,System.UriKind)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="uriKind">Specifies the kind of URI.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetUri(Configuration.IConfigurationProvider,System.String,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="relativeUri">The relative URI to add to the base <see cref="T:System.Uri"/>.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="T:Configuration.AppSettingExtensions">
+            <summary>
+            Provides <see cref="T:System.Boolean"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.DateTime"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Decimal"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int16"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int32"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int64"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.String"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Uri"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsBoolean(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Boolean"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Boolean"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDateTime(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDateTime(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDateTime(Configuration.IAppSetting,System.Globalization.DateTimeStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.DateTimeStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDecimal(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDecimal(Configuration.IAppSetting,System.Globalization.NumberStyles)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDecimal(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDecimal(Configuration.IAppSetting,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt16(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt16(Configuration.IAppSetting,System.Globalization.NumberStyles)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt16(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt16(Configuration.IAppSetting,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt32(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt32(Configuration.IAppSetting,System.Globalization.NumberStyles)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt32(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt32(Configuration.IAppSetting,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt64(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt64(Configuration.IAppSetting,System.Globalization.NumberStyles)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt64(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt64(Configuration.IAppSetting,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsString(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsUri(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsUri(Configuration.IAppSetting,System.UriKind)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="uriKind">Specifies the kind of URI.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsUri(Configuration.IAppSetting,System.String)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="relativeUri">The relative URI to add to the base <see cref="T:System.Uri"/>.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsString(Configuration.IAppSetting,System.Object[])">
+            <summary>
+            Converts the application setting value to its formatted <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert and format.</param>
+            <param name="args">A <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+            <returns>Returns a formatted <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsString(Configuration.IAppSetting,System.IFormatProvider,System.Object[])">
+            <summary>
+            Converts the application setting value to its formatted <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert and format.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <param name="args">A <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+            <returns>Returns a formatted <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="T:Configuration.CascadingConfiguration">
+            <summary>
+            The cascading configuration.
+            </summary>
+        </member>
+        <member name="T:Configuration.Sdk.ConfigurationBase`1">
+            <summary>
+            The configuration base.
+            </summary>
+            <typeparam name="T">The type of configuration.</typeparam>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationBase`1.#ctor">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.ConfigurationBase`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationBase`1.LogUsing(System.Action{System.String,System.String})">
+            <summary>
+            Logs using the specified logging action.
+            </summary>
+            <param name="log">The logging action.</param>
+            <returns>The configuration.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationBase`1.LogUsing(System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Logs using the specified logging actions.
+            </summary>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+            <returns>The configuration.</returns>
+        </member>
+        <member name="P:Configuration.Sdk.ConfigurationBase`1.LogAppSetting">
+            <summary>
+            Gets the application setting logging action.
+            </summary>
+            <value>The application setting logging action.</value>
+        </member>
+        <member name="P:Configuration.Sdk.ConfigurationBase`1.LogConnectionString">
+            <summary>
+            Gets the connection string logging action.
+            </summary>
+            <value>The connection string logging action.</value>
+        </member>
+        <member name="T:Configuration.IConfiguration">
+            <summary>
+            Exposes the public members of a configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.IConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration,Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+            <param name="second">The second configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+            <param name="second">The second configuration.</param>
+            <param name="third">The third configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+            <param name="second">The second configuration.</param>
+            <param name="third">The third configuration.</param>
+            <param name="fourth">The fourth configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+            <param name="second">The second configuration.</param>
+            <param name="third">The third configuration.</param>
+            <param name="fourth">The fourth configuration.</param>
+            <param name="fifth">The fifth configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(System.Collections.Generic.IEnumerable{Configuration.IConfiguration})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="inOrder">The configurations in order of preference.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.Add(Configuration.IConfiguration)">
+            <summary>
+            Adds another configuration to the list of configurations to cascade through.
+            </summary>
+            <param name="configuration">The configuration to add.</param>
+            <returns>The cascading configuration.</returns>
+        </member>
+        <member name="T:Configuration.ConfigurationException">
+            <summary>
+            The exception that is thrown when there is a problem with configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.ConfigurationException.#ctor">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.ConfigurationException"/> class.
+            </summary>
+        </member>
+        <member name="M:Configuration.ConfigurationException.#ctor(System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.ConfigurationException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Configuration.ConfigurationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.ConfigurationException"/> class.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="M:Configuration.ConfigurationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.ConfigurationException"/> class.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object 
+            data about the exception being thrown.
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information 
+            about the source or destination.
+            </param>
+        </member>
+        <member name="T:Configuration.ConfigurationManager">
+            <summary>
+            Provides access to configuration data for applications.
+            </summary>
+        </member>
+        <member name="M:Configuration.ConfigurationManager.Use``1">
+            <summary>
+            Uses the specified configuration type.
+            </summary>
+            <typeparam name="T">The configuration type.</typeparam>
+        </member>
+        <member name="M:Configuration.ConfigurationManager.Use(Configuration.IConfiguration)">
+            <summary>
+            Uses the specified configuration.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:Configuration.ConfigurationManager.AppSettings">
+            <summary>
+            Gets the application settings for the current configuration provider.
+            </summary>
+            <value>The application settings.</value>
+        </member>
+        <member name="P:Configuration.ConfigurationManager.ConnectionStrings">
+            <summary>
+            Gets the connection strings for the current configuration provider.
+            </summary>
+            <value>The connection strings.</value>
+        </member>
+        <member name="T:Configuration.DefaultConfiguration">
+            <summary>
+            The default configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.DefaultConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="T:Configuration.FileConfiguration">
+            <summary>
+            The file configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.FileConfiguration.#ctor(System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.FileConfiguration"/> class.
+            </summary>
+            <param name="filename">The filename.</param>
+        </member>
+        <member name="M:Configuration.FileConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="T:Configuration.IAppSetting">
+            <summary>
+            Exposes the public members of an application setting.
+            </summary>
+        </member>
+        <member name="P:Configuration.IAppSetting.Key">
+            <summary>
+            Gets the key for the application setting.
+            </summary>
+            <value>The key for the application setting.</value>
+        </member>
+        <member name="P:Configuration.IAppSetting.Value">
+            <summary>
+            Gets the value of the application setting.
+            </summary>
+            <value>The value of the application setting.</value>
+        </member>
+        <member name="T:Configuration.IConfigurationProvider">
+            <summary>
+            Exposes the public members of a configuration provider.
+            </summary>
+        </member>
+        <member name="M:Configuration.IConfigurationProvider.GetAppSetting(System.String)">
+            <summary>
+            Gets the application setting.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.IConfigurationProvider.GetAppSetting(System.String,System.Boolean)">
+            <summary>
+            Gets the application setting.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <param name="allowNull">If set to <c>true</c> then allows a null application setting to be returned.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.IConfigurationProvider.GetConnectionString(System.String)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.IConfigurationProvider.GetConnectionString(System.String,System.Boolean)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="allowNull">If set to <c>true</c> then allows a null connection string to be returned.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="T:Configuration.IConnectionString">
+            <summary>
+            Exposes the public members of a connection string.
+            </summary>
+        </member>
+        <member name="P:Configuration.IConnectionString.Name">
+            <summary>
+            Gets the name of the connection string.
+            </summary>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="P:Configuration.IConnectionString.Value">
+            <summary>
+            Gets the connection string value.
+            </summary>
+            <value>The connection string value.</value>
+        </member>
+        <member name="P:Configuration.IConnectionString.ProviderName">
+            <summary>
+            Gets the name of the provider for the connection string.
+            </summary>
+            <value>The name of the provider for the connection string.</value>
+        </member>
+        <member name="T:Configuration.MemoryConfiguration">
+            <summary>
+            The memory configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.MemoryConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="M:Configuration.MemoryConfiguration.WithAppSetting(System.String,System.String)">
+            <summary>
+            Adds an application setting to the in-memory application settings.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <param name="value">The application setting value.</param>
+            <returns>The canned configuration.</returns>
+        </member>
+        <member name="M:Configuration.MemoryConfiguration.WithConnectionString(System.String,System.String)">
+            <summary>
+            Adds an connection string to the in-memory connection strings.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="value">The connection string value.</param>
+            <returns>The canned configuration.</returns>
+        </member>
+        <member name="M:Configuration.MemoryConfiguration.WithConnectionString(System.String,System.String,System.String)">
+            <summary>
+            Adds an connection string to the in-memory connection strings.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="value">The connection string value.</param>
+            <param name="providerName">The name of the provider for the connection string.</param>
+            <returns>The canned configuration.</returns>
+        </member>
+        <member name="T:Configuration.NetworkConfiguration">
+            <summary>
+            The network configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.#ctor(System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.NetworkConfiguration"/> class.
+            </summary>
+            <param name="configurationUriString">The configuration URI string.</param>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.#ctor(System.Uri)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.NetworkConfiguration"/> class.
+            </summary>
+            <param name="configurationUri">The configuration URI.</param>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.#ctor(Configuration.Sdk.IFileOperationsProxy,Configuration.Sdk.IWebOperationsProxy,System.Uri)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.NetworkConfiguration"/> class.
+            </summary>
+            <param name="fileOperationsProxy">The file operations proxy.</param>
+            <param name="webOperationsProxy">The web operations proxy.</param>
+            <param name="configurationUri">The configuration URI.</param>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.CacheToDisk(System.String)">
+            <summary>
+            Caches the contents of the configuration to the local disk with the specified filename.
+            </summary>
+            <param name="filename">The filename to use for the cache.</param>
+            <returns>The network configuration.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.AppSettings">
+            <summary>
+            The application settings indexed by their keys.
+            </summary>
+            <remarks>Provided for backwards compatibility with .NET configuration only.</remarks>
+        </member>
+        <member name="M:Configuration.Sdk.AppSettings.#ctor(Configuration.IConfigurationProvider)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.AppSettings"/> class.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+        </member>
+        <member name="P:Configuration.Sdk.AppSettings.Item(System.String)">
+            <summary>
+            Gets the application setting value associated with the specified key.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting value.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.CascadingConfigurationProvider">
+            <summary>
+            A cascading configuration provider.
+            </summary>
+            <remarks>This configuration provider inspects each of its configuration providers in order for a valid result.</remarks>
+        </member>
+        <member name="T:Configuration.Sdk.ConfigurationProviderBase">
+            <summary>
+            The configuration provider base.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.#ctor(System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.ConfigurationProviderBase"/> class.
+            </summary>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetAppSetting(System.String)">
+            <summary>
+            Gets the application setting.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetAppSetting(System.String,System.Boolean)">
+            <summary>
+            Gets the application setting.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <param name="allowNull">If set to <c>true</c> then allows a null application setting to be returned.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetConnectionString(System.String)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetConnectionString(System.String,System.Boolean)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="allowNull">If set to <c>true</c> then allows a null connection string to be returned.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetAppSettingFromConfiguration(System.String)">
+            <summary>
+            Gets the application setting from the configuration.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetConnectionStringFromConfiguration(System.String)">
+            <summary>
+            Gets the connection string from the configuration.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.CascadingConfigurationProvider.#ctor(System.Collections.Generic.IEnumerable{Configuration.IConfigurationProvider},System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.CascadingConfigurationProvider"/> class.
+            </summary>
+            <param name="configurationProviders">The configuration providers.</param>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+        </member>
+        <member name="M:Configuration.Sdk.CascadingConfigurationProvider.GetAppSettingFromConfiguration(System.String)">
+            <summary>
+            Gets the application setting from the configuration.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.CascadingConfigurationProvider.GetConnectionStringFromConfiguration(System.String)">
+            <summary>
+            Gets the connection string from the configuration.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.ConnectionStringSettings">
+            <summary>
+            The connection string settings indexed by their names.
+            </summary>
+            <remarks>Provided for backwards compatibility with .NET configuration only.</remarks>
+        </member>
+        <member name="M:Configuration.Sdk.ConnectionStringSettings.#ctor(Configuration.IConfigurationProvider)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.ConnectionStringSettings"/> class.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+        </member>
+        <member name="P:Configuration.Sdk.ConnectionStringSettings.Item(System.String)">
+            <summary>
+            Gets the connection string setting associated with the specified name.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string setting.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.DefaultAppSetting">
+            <summary>
+            The default type of application setting.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.DefaultAppSetting.#ctor(System.String,System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.DefaultAppSetting"/> class.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <param name="value">The application setting value.</param>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultAppSetting.Key">
+            <summary>
+            Gets the key for the application setting.
+            </summary>
+            <value>The key for the application setting.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultAppSetting.Value">
+            <summary>
+            Gets the value of the application setting.
+            </summary>
+            <value>The value of the application setting.</value>
+        </member>
+        <member name="T:Configuration.Sdk.DefaultConnectionString">
+            <summary>
+            The default type of connection string.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.DefaultConnectionString.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.DefaultConnectionString"/> class.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="value">The connection string value.</param>
+            <param name="providerName">The name of the provider for the connection string.</param>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionString.Name">
+            <summary>
+            Gets the name of the connection string.
+            </summary>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionString.Value">
+            <summary>
+            Gets the connection string value.
+            </summary>
+            <value>The connection string value.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionString.ProviderName">
+            <summary>
+            Gets the name of the provider for the connection string.
+            </summary>
+            <value>The name of the provider for the connection string.</value>
+        </member>
+        <member name="T:Configuration.Sdk.DefaultConnectionStringSetting">
+            <summary>
+            The default type of connection string setting.
+            </summary>
+            <remarks>Provided for backwards compatibility with .NET configuration only.</remarks>
+        </member>
+        <member name="T:Configuration.Sdk.IConnectionStringSetting">
+            <summary>
+            Exposes the public members of the connection string settings.
+            </summary>
+            <remarks>Provided for backwards compatibility with .NET configuration only.</remarks>
+        </member>
+        <member name="P:Configuration.Sdk.IConnectionStringSetting.Name">
+            <summary>
+            Gets the name of the connection string.
+            </summary>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="P:Configuration.Sdk.IConnectionStringSetting.ConnectionString">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <value>The connection string.</value>
+        </member>
+        <member name="P:Configuration.Sdk.IConnectionStringSetting.ProviderName">
+            <summary>
+            Gets the name of the provider for the connection string.
+            </summary>
+            <value>The name of the provider for the connection string.</value>
+        </member>
+        <member name="M:Configuration.Sdk.DefaultConnectionStringSetting.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.DefaultConnectionStringSetting"/> class.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="connectionString">The connection string value.</param>
+            <param name="providerName">Name of the provider.</param>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionStringSetting.Name">
+            <summary>
+            Gets the name of the connection string.
+            </summary>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionStringSetting.ConnectionString">
+            <summary>
+            Gets the connection string value.
+            </summary>
+            <value>The connection string value.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionStringSetting.ProviderName">
+            <summary>
+            Gets the name of the provider for the connection string.
+            </summary>
+            <value>The name of the provider for the connection string.</value>
+        </member>
+        <member name="T:Configuration.Sdk.FileConfigurationProvider">
+            <summary>
+            A file configuration provider.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.FileConfigurationProvider.#ctor(Configuration.Sdk.IFileOperationsProxy,System.String,System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.FileConfigurationProvider"/> class.
+            </summary>
+            <param name="fileOperationsProxy">The file operations proxy.</param>
+            <param name="filename">The configuration filename.</param>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+        </member>
+        <member name="M:Configuration.Sdk.FileConfigurationProvider.GetAppSettingFromConfiguration(System.String)">
+            <summary>
+            Gets the application setting from the configuration.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.FileConfigurationProvider.GetConnectionStringFromConfiguration(System.String)">
+            <summary>
+            Gets the connection string from the configuration.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.FileOperationsProxy">
+            <summary>
+            The file operations proxy.
+            </summary>
+        </member>
+        <member name="T:Configuration.Sdk.IFileOperationsProxy">
+            <summary>
+            Exposes the public members of file operations proxy.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.IFileOperationsProxy.GetTempFileName">
+            <summary>
+            Creates a uniquely named, zero-byte temporary file on disk and returns the full path of that file.
+            </summary>
+            <returns>A <see cref="T:System.String"/> containing the full path of the temporary file.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.IFileOperationsProxy.FileExists(System.String)">
+            <summary>
+            Determines whether the specified file exists.
+            </summary>
+            <param name="path">The file to check.</param>
+            <returns>Returns <c>true</c> if the path contains the name of an existing file; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.IFileOperationsProxy.FileCopy(System.String,System.String,System.Boolean)">
+            <summary>
+            Copies an existing file to a new file. Overwriting a file of the same name is allowed.
+            </summary>
+            <param name="sourceFilename">The file to copy.</param>
+            <param name="destinationFilename">The name of the destination file. This cannot be a directory.</param>
+            <param name="overwrite">Set to <c>true</c> if the destination file can be overwritten; otherwise, <c>false</c>.</param>
+        </member>
+        <member name="M:Configuration.Sdk.FileOperationsProxy.GetTempFileName">
+            <summary>
+            Creates a uniquely named, zero-byte temporary file on disk and returns the full path of that file.
+            </summary>
+            <returns>A <see cref="T:System.String"/> containing the full path of the temporary file.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.FileOperationsProxy.FileExists(System.String)">
+            <summary>
+            Determines whether the specified file exists.
+            </summary>
+            <param name="path">The file to check.</param>
+            <returns>Returns <c>true</c> if the path contains the name of an existing file; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.FileOperationsProxy.FileCopy(System.String,System.String,System.Boolean)">
+            <summary>
+            Copies an existing file to a new file. Overwriting a file of the same name is allowed.
+            </summary>
+            <param name="sourceFilename">The file to copy.</param>
+            <param name="destinationFilename">The name of the destination file. This cannot be a directory.</param>
+            <param name="overwrite">Set to <c>true</c> if the destination file can be overwritten; otherwise, <c>false</c>.</param>
+        </member>
+        <member name="T:Configuration.Sdk.IWebOperationsProxy">
+            <summary>
+            Exposes the public members of web operations proxy.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.IWebOperationsProxy.DownloadFile(System.Uri,System.String)">
+            <summary>
+            Downloads the resource with the specified URI to a local file.
+            </summary>
+            <param name="address">The URI from which to download data.</param>
+            <param name="fileName">The name of the local file that is to receive the data.</param>
+        </member>
+        <member name="T:Configuration.Sdk.MemoryConfigurationProvider">
+            <summary>
+            A memory configuration provider.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.MemoryConfigurationProvider.#ctor(System.Collections.Generic.IEnumerable{Configuration.IAppSetting},System.Collections.Generic.IEnumerable{Configuration.IConnectionString},System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.MemoryConfigurationProvider"/> class.
+            </summary>
+            <param name="appSettings">The application settings.</param>
+            <param name="connectionStrings">The connection strings.</param>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+        </member>
+        <member name="M:Configuration.Sdk.MemoryConfigurationProvider.GetAppSettingFromConfiguration(System.String)">
+            <summary>
+            Gets the application setting from the configuration.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.MemoryConfigurationProvider.GetConnectionStringFromConfiguration(System.String)">
+            <summary>
+            Gets the connection string from the configuration.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.WebOperationsProxy">
+            <summary>
+            The web operations proxy.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.WebOperationsProxy.DownloadFile(System.Uri,System.String)">
+            <summary>
+            Downloads the resource with the specified URI to a local file.
+            </summary>
+            <param name="address">The URI from which to download data.</param>
+            <param name="fileName">The name of the local file that is to receive the data.</param>
+        </member>
+        <member name="T:Guard">
+            <summary>
+            The <see cref="T:Guard"/> clause.
+            </summary>
+        </member>
+        <member name="M:Guard.Null``1(System.Func{``0})">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="M:Guard.Null``1(System.Func{System.Nullable{``0}})">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="P:Guard.Against">
+            <summary>
+            Provides instance and extension methods for the <see cref="T:Guard"/> clause.
+            </summary>
+        </member>
+        <member name="T:Guard.Expression">
+            <summary>
+            Provides expression helper methods for the <see cref="T:Guard"/> clause.
+            </summary>
+        </member>
+        <member name="M:Guard.Expression.Parse``1(System.Func{``0})">
+            <summary>
+            Converts the specified expression to its string representation.
+            </summary>
+            <typeparam name="T">The expression type.</typeparam>
+            <param name="expression">The expression.</param>
+            <returns>The string representation of the specified expression.</returns>
+        </member>
+        <member name="T:GuardExtensions">
+            <summary>
+            Provides extension methods for the <see cref="T:Guard"/> clause.
+            </summary>
+        </member>
+        <member name="M:GuardExtensions.Null``1(Guard,``0,System.String)">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="M:GuardExtensions.Null``1(Guard,``0,System.String,System.String)">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:GuardExtensions.Null``1(Guard,System.Nullable{``0},System.String)">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="M:GuardExtensions.Null``1(Guard,System.Nullable{``0},System.String,System.String)">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmpty``1(Guard,System.Func{System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Guard against null or empty argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmpty``1(Guard,System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Guard against null or empty argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The Guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmptyOrNullElements``1(Guard,System.Func{System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Guard against null or empty or null elements argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmptyOrNullElements``1(Guard,System.Func{System.Collections.Generic.IEnumerable{System.Nullable{``0}}})">
+            <summary>
+            Guard against null or empty or null elements argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmptyOrNullElements``1(Guard,System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Guard against null or empty or null elements argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The Guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmptyOrNullElements``1(Guard,System.Collections.Generic.IEnumerable{System.Nullable{``0}},System.String)">
+            <summary>
+            Guard against null or empty or null elements argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The Guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+    </members>
+</doc>

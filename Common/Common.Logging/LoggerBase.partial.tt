@@ -1,0 +1,66 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #><#
+	var allLevels = new[] { "Trace", "Debug", "Info", "Warn", "Error", "Fatal" };
+#>using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Common.Logging
+{
+    partial class LoggerBase : ICommonLogger
+    {
+<# foreach (var level in allLevels) { #>
+		#region <#= level #>
+        public void <#= level #>(Func<string> fn)
+        {
+            if (Is<#= level #>Enabled)
+                Wrap(() => WriteLog(LogLevel.<#= level #>, fn()));
+        }
+        public void <#= level #><T>(T value)
+        {
+            if (Is<#= level #>Enabled)
+                Wrap(() => WriteLog(LogLevel.<#= level #>, value.ToString()));
+        }
+        public void <#= level #>(string message)
+        {
+            if (Is<#= level #>Enabled)
+                WriteLog(LogLevel.<#= level #>, message);
+        }
+        public void <#= level #>(string message, params object[] args)
+        {
+            <#= level #>(() => String.Format(message, args));
+        }
+        public void <#= level #>(string message, Exception exception)
+        {
+            if (Is<#= level #>Enabled)
+                WriteLog(LogLevel.<#= level #>, message, exception);
+        }
+        public void <#= level #><TArgument>(string message, TArgument argument)
+        {
+            <#= level #>(() => String.Format(message, argument));
+        }
+        public void <#= level #><TArgument1, TArgument2>(string message, TArgument1 argument1, TArgument2 argument2)
+        {
+            <#= level #>(() => String.Format(message, argument1, argument2));
+        }
+        public void <#= level #><TArgument1, TArgument2, TArgument3>(string message, TArgument1 argument1, TArgument2 argument2, TArgument3 argument3)
+        {
+            <#= level #>(() => String.Format(message, argument1, argument2, argument3));
+        }
+
+		public void <#= level #>All(params object[] args)
+		{
+            <#= level #>(() => String.Join(",", args.Select(s => s.ToString())));
+		}
+        #endregion
+
+<# } #>
+    }
+}

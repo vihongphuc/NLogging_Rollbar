@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LightInject.Annotation</name>
+    </assembly>
+    <members>
+        <member name="T:LightInject.InjectAttribute">
+            <summary>
+            Indicates a required property dependency or a named constructor dependency.
+            </summary>
+        </member>
+        <member name="M:LightInject.InjectAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LightInject.InjectAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:LightInject.InjectAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LightInject.InjectAttribute"/> class.
+            </summary>
+            <param name="serviceName">The name of the service to be injected.</param>
+        </member>
+        <member name="P:LightInject.InjectAttribute.ServiceName">
+            <summary>
+            Gets the name of the service to be injected.
+            </summary>
+        </member>
+        <member name="T:LightInject.AnnotationExtension">
+            <summary>
+            Extends the <see cref="T:LightInject.ServiceContainer"/> class with methods for enabling
+            annotated property/constructor injection.
+            </summary>
+        </member>
+        <member name="M:LightInject.AnnotationExtension.EnableAnnotatedPropertyInjection(LightInject.ServiceContainer)">
+            <summary>
+            Enables annotated property injection.
+            </summary>
+            <param name="serviceContainer">The target <see cref="T:LightInject.ServiceContainer"/>
+            for which to enable annotated property injection.</param>
+        </member>
+        <member name="M:LightInject.AnnotationExtension.EnableAnnotatedConstructorInjection(LightInject.ServiceContainer)">
+            <summary>
+            Enables annotated constructor injection.
+            </summary>
+            <param name="serviceContainer">The target <see cref="T:LightInject.ServiceContainer"/>
+            for which to enable annotated constructor injection.</param>
+        </member>
+        <member name="T:LightInject.Annotation.AnnotatedPropertyDependencySelector">
+            <summary>
+            An <see cref="T:LightInject.IPropertyDependencySelector"/> that uses the <see cref="T:LightInject.InjectAttribute"/>
+            to determine which properties to inject dependencies.
+            </summary>
+        </member>
+        <member name="M:LightInject.Annotation.AnnotatedPropertyDependencySelector.#ctor(LightInject.IPropertySelector)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LightInject.Annotation.AnnotatedPropertyDependencySelector"/> class.
+            </summary>
+            <param name="propertySelector">The <see cref="T:LightInject.IPropertySelector"/> that is 
+            responsible for selecting a list of injectable properties.</param>
+        </member>
+        <member name="M:LightInject.Annotation.AnnotatedPropertyDependencySelector.Execute(System.Type)">
+            <summary>
+            Selects the property dependencies for the given <paramref name="type"/> 
+            that is annotated with the <see cref="T:LightInject.InjectAttribute"/>.
+            </summary>
+            <param name="type">The <see cref="T:System.Type"/> for which to select the property dependencies.</param>
+            <returns>A list of <see cref="T:LightInject.PropertyDependency"/> instances that represents the property
+            dependencies for the given <paramref name="type"/>.</returns>
+        </member>
+        <member name="T:LightInject.Annotation.AnnotatedConstructorDependencySelector">
+            <summary>
+            A <see cref="T:LightInject.ConstructorDependencySelector"/> that looks for the <see cref="T:LightInject.InjectAttribute"/> 
+            to determine the name of service to be injected.
+            </summary>
+        </member>
+        <member name="M:LightInject.Annotation.AnnotatedConstructorDependencySelector.Execute(System.Reflection.ConstructorInfo)">
+            <summary>
+            Selects the constructor dependencies for the given <paramref name="constructor"/>.
+            </summary>
+            <param name="constructor">The <see cref="T:LightInject.ConstructionInfo"/> for which to select the constructor dependencies.</param>
+            <returns>A list of <see cref="T:LightInject.ConstructorDependency"/> instances that represents the constructor
+            dependencies for the given <paramref name="constructor"/>.</returns>
+        </member>
+        <member name="T:LightInject.Annotation.AnnotatedConstructorSelector">
+            <summary>
+            A <see cref="T:LightInject.IConstructorSelector"/> implementation that uses information 
+            from the <see cref="T:LightInject.InjectAttribute"/> to determine if a given service can be resolved.
+            </summary>
+        </member>
+        <member name="M:LightInject.Annotation.AnnotatedConstructorSelector.#ctor(System.Func{System.Type,System.String,System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:LightInject.Annotation.AnnotatedConstructorSelector"/> class.
+            </summary>
+            <param name="canGetInstance">A function delegate that determines if a service type can be resolved.</param>
+        </member>
+        <member name="M:LightInject.Annotation.AnnotatedConstructorSelector.GetServiceName(System.Reflection.ParameterInfo)">
+            <summary>
+            Gets the service name based on the given <paramref name="parameter"/>.
+            </summary>
+            <param name="parameter">The <see cref="T:System.Reflection.ParameterInfo"/> for which to get the service name.</param>
+            <returns>The name of the service for the given <paramref name="parameter"/>.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:Configuration.Advanced.ConfigurationProviderExtensions">
+            <summary>
+            Provides <see cref="T:System.Boolean"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.DateTime"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Decimal"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int16"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int32"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int64"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.String"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Uri"/> extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+            <summary>
+            Provides extension methods for the <see cref="T:Configuration.IConfigurationProvider"/> type.
+            </summary>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetBoolean(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts application setting value to its <see cref="T:System.Boolean"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Boolean"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDateTime(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDateTime(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDateTime(Configuration.IConfigurationProvider,System.String,System.Globalization.DateTimeStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="styles">
+            A bitwise combination of the enumeration values that indicates the style elements that can be present in  the application setting value
+            for the parse operation to succeed and that defines how to interpret the parsed date in relation to the current time zone or the current
+            date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None"/>.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDecimal(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDecimal(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDecimal(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetDecimal(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt16(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt16(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt16(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt16(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt32(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt32(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt32(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt32(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt64(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt64(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt64(Configuration.IConfigurationProvider,System.String,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetInt64(Configuration.IConfigurationProvider,System.String,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="style">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetString(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetUri(Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetUri(Configuration.IConfigurationProvider,System.String,System.UriKind)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="uriKind">Specifies the kind of URI.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetUri(Configuration.IConfigurationProvider,System.String,System.String)">
+            <summary>
+            Gets and converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="relativeUri">The relative URI to add to the base <see cref="T:System.Uri"/>.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetString(Configuration.IConfigurationProvider,System.String,System.Object[])">
+            <summary>
+            Gets and converts the application setting value to its formatted <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="args">A <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+            <returns>Returns a formatted <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.Advanced.ConfigurationProviderExtensions.GetString(Configuration.IConfigurationProvider,System.String,System.IFormatProvider,System.Object[])">
+            <summary>
+            Gets and converts the application setting value to its formatted <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+            <param name="key">The key for the application setting.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <param name="args">A <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+            <returns>Returns a formatted <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="T:Configuration.AppSettingExtensions">
+            <summary>
+            Provides <see cref="T:System.Boolean"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.DateTime"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Decimal"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int16"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int32"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Int64"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.String"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+            <summary>
+            Provides <see cref="T:System.Uri"/> extension methods for the <see cref="T:Configuration.IAppSetting"/> type.
+            </summary>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsBoolean(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Boolean"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Boolean"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDateTime(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDateTime(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDateTime(Configuration.IAppSetting,System.Globalization.DateTimeStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.DateTimeStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDecimal(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDecimal(Configuration.IAppSetting,System.Globalization.NumberStyles)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDecimal(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsDecimal(Configuration.IAppSetting,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Decimal"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Decimal"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt16(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt16(Configuration.IAppSetting,System.Globalization.NumberStyles)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt16(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt16(Configuration.IAppSetting,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int16"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int16"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt32(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt32(Configuration.IAppSetting,System.Globalization.NumberStyles)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt32(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt32(Configuration.IAppSetting,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int32"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int32"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt64(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt64(Configuration.IAppSetting,System.Globalization.NumberStyles)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt64(Configuration.IAppSetting,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsInt64(Configuration.IAppSetting,System.Globalization.NumberStyles,System.IFormatProvider)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Int64"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="styles">
+            A bitwise combination of <see cref="T:System.Globalization.NumberStyles"/> values that indicates the
+            style elements that can be present in the application setting value.
+            </param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <returns>Returns a <see cref="T:System.Int64"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsString(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsString(Configuration.IAppSetting,System.Object[])">
+            <summary>
+            Converts the application setting value to its formatted <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert and format.</param>
+            <param name="args">A <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+            <returns>Returns a formatted <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsString(Configuration.IAppSetting,System.IFormatProvider,System.Object[])">
+            <summary>
+            Converts the application setting value to its formatted <see cref="T:System.String"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert and format.</param>
+            <param name="provider">
+            A <see cref="T:System.IFormatProvider"/> implementation that supplies culture-specific formatting information.
+            </param>
+            <param name="args">A <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+            <returns>Returns a formatted <see cref="T:System.String"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsUri(Configuration.IAppSetting)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsUri(Configuration.IAppSetting,System.UriKind)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="uriKind">Specifies the kind of URI.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="M:Configuration.AppSettingExtensions.AsUri(Configuration.IAppSetting,System.String)">
+            <summary>
+            Converts the application setting value to its <see cref="T:System.Uri"/> equivalent.
+            </summary>
+            <param name="appSetting">The application setting containing the value to convert.</param>
+            <param name="relativeUri">The relative URI to add to the base <see cref="T:System.Uri"/>.</param>
+            <returns>Returns a <see cref="T:System.Uri"/> value.</returns>
+        </member>
+        <member name="T:Configuration.MemoryConfiguration">
+            <summary>
+            The memory configuration.
+            </summary>
+        </member>
+        <member name="T:Configuration.Sdk.ConfigurationBase`1">
+            <summary>
+            The configuration base.
+            </summary>
+            <typeparam name="T">The type of configuration.</typeparam>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationBase`1.#ctor">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.ConfigurationBase`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationBase`1.LogUsing(System.Action{System.String,System.String})">
+            <summary>
+            Logs using the specified logging action.
+            </summary>
+            <param name="log">The logging action.</param>
+            <returns>The configuration.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationBase`1.LogUsing(System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Logs using the specified logging actions.
+            </summary>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+            <returns>The configuration.</returns>
+        </member>
+        <member name="P:Configuration.Sdk.ConfigurationBase`1.LogAppSetting">
+            <summary>
+            Gets the application setting logging action.
+            </summary>
+            <value>The application setting logging action.</value>
+        </member>
+        <member name="P:Configuration.Sdk.ConfigurationBase`1.LogConnectionString">
+            <summary>
+            Gets the connection string logging action.
+            </summary>
+            <value>The connection string logging action.</value>
+        </member>
+        <member name="T:Configuration.IConfiguration">
+            <summary>
+            Exposes the public members of a configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.IConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="M:Configuration.MemoryConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="M:Configuration.MemoryConfiguration.WithAppSetting(System.String,System.String)">
+            <summary>
+            Adds an application setting to the in-memory application settings.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <param name="value">The application setting value.</param>
+            <returns>The canned configuration.</returns>
+        </member>
+        <member name="M:Configuration.MemoryConfiguration.WithConnectionString(System.String,System.String)">
+            <summary>
+            Adds an connection string to the in-memory connection strings.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="value">The connection string value.</param>
+            <returns>The canned configuration.</returns>
+        </member>
+        <member name="M:Configuration.MemoryConfiguration.WithConnectionString(System.String,System.String,System.String)">
+            <summary>
+            Adds an connection string to the in-memory connection strings.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="value">The connection string value.</param>
+            <param name="providerName">The name of the provider for the connection string.</param>
+            <returns>The canned configuration.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.MemoryConfigurationProvider">
+            <summary>
+            A memory configuration provider.
+            </summary>
+        </member>
+        <member name="T:Configuration.Sdk.ConfigurationProviderBase">
+            <summary>
+            The configuration provider base.
+            </summary>
+        </member>
+        <member name="T:Configuration.IConfigurationProvider">
+            <summary>
+            Exposes the public members of a configuration provider.
+            </summary>
+        </member>
+        <member name="M:Configuration.IConfigurationProvider.GetAppSetting(System.String)">
+            <summary>
+            Gets the application setting.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.IConfigurationProvider.GetAppSetting(System.String,System.Boolean)">
+            <summary>
+            Gets the application setting.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <param name="allowNull">If set to <c>true</c> then allows a null application setting to be returned.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.IConfigurationProvider.GetConnectionString(System.String)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.IConfigurationProvider.GetConnectionString(System.String,System.Boolean)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="allowNull">If set to <c>true</c> then allows a null connection string to be returned.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.#ctor(System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.ConfigurationProviderBase"/> class.
+            </summary>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetAppSetting(System.String)">
+            <summary>
+            Gets the application setting.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetAppSetting(System.String,System.Boolean)">
+            <summary>
+            Gets the application setting.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <param name="allowNull">If set to <c>true</c> then allows a null application setting to be returned.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetConnectionString(System.String)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetConnectionString(System.String,System.Boolean)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="allowNull">If set to <c>true</c> then allows a null connection string to be returned.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetAppSettingFromConfiguration(System.String)">
+            <summary>
+            Gets the application setting from the configuration.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.ConfigurationProviderBase.GetConnectionStringFromConfiguration(System.String)">
+            <summary>
+            Gets the connection string from the configuration.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.MemoryConfigurationProvider.#ctor(System.Collections.Generic.IEnumerable{Configuration.IAppSetting},System.Collections.Generic.IEnumerable{Configuration.IConnectionString},System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.MemoryConfigurationProvider"/> class.
+            </summary>
+            <param name="appSettings">The application settings.</param>
+            <param name="connectionStrings">The connection strings.</param>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+        </member>
+        <member name="M:Configuration.Sdk.MemoryConfigurationProvider.GetAppSettingFromConfiguration(System.String)">
+            <summary>
+            Gets the application setting from the configuration.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.MemoryConfigurationProvider.GetConnectionStringFromConfiguration(System.String)">
+            <summary>
+            Gets the connection string from the configuration.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="T:Configuration.ConfigurationException">
+            <summary>
+            The exception that is thrown when there is a problem with configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.ConfigurationException.#ctor">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.ConfigurationException"/> class.
+            </summary>
+        </member>
+        <member name="M:Configuration.ConfigurationException.#ctor(System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.ConfigurationException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Configuration.ConfigurationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.ConfigurationException"/> class.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="M:Configuration.ConfigurationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.ConfigurationException"/> class.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object 
+            data about the exception being thrown.
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information 
+            about the source or destination.
+            </param>
+        </member>
+        <member name="T:Configuration.DefaultConfiguration">
+            <summary>
+            The default configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.DefaultConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="T:Configuration.FileConfiguration">
+            <summary>
+            The file configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.FileConfiguration.#ctor(System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.FileConfiguration"/> class.
+            </summary>
+            <param name="filename">The filename.</param>
+        </member>
+        <member name="M:Configuration.FileConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="T:Guard">
+            <summary>
+            The <see cref="T:Guard"/> clause.
+            </summary>
+        </member>
+        <member name="M:Guard.Null``1(System.Func{``0})">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="M:Guard.Null``1(System.Func{System.Nullable{``0}})">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="P:Guard.Against">
+            <summary>
+            Provides instance and extension methods for the <see cref="T:Guard"/> clause.
+            </summary>
+        </member>
+        <member name="T:Guard.Expression">
+            <summary>
+            Provides expression helper methods for the <see cref="T:Guard"/> clause.
+            </summary>
+        </member>
+        <member name="M:Guard.Expression.Parse``1(System.Func{``0})">
+            <summary>
+            Converts the specified expression to its string representation.
+            </summary>
+            <typeparam name="T">The expression type.</typeparam>
+            <param name="expression">The expression.</param>
+            <returns>The string representation of the specified expression.</returns>
+        </member>
+        <member name="T:GuardExtensions">
+            <summary>
+            Provides extension methods for the <see cref="T:Guard"/> clause.
+            </summary>
+        </member>
+        <member name="M:GuardExtensions.Null``1(Guard,``0,System.String)">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="M:GuardExtensions.Null``1(Guard,``0,System.String,System.String)">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:GuardExtensions.Null``1(Guard,System.Nullable{``0},System.String)">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="M:GuardExtensions.Null``1(Guard,System.Nullable{``0},System.String,System.String)">
+            <summary>
+            Guard against null argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmpty``1(Guard,System.Func{System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Guard against null or empty argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmpty``1(Guard,System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Guard against null or empty argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The Guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmptyOrNullElements``1(Guard,System.Func{System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Guard against null or empty or null elements argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmptyOrNullElements``1(Guard,System.Func{System.Collections.Generic.IEnumerable{System.Nullable{``0}}})">
+            <summary>
+            Guard against null or empty or null elements argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The guard clause.</param>
+            <param name="expression">An expression returning the value to guard against.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmptyOrNullElements``1(Guard,System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Guard against null or empty or null elements argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The Guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="M:GuardExtensions.NullOrEmptyOrNullElements``1(Guard,System.Collections.Generic.IEnumerable{System.Nullable{``0}},System.String)">
+            <summary>
+            Guard against null or empty or null elements argument values.
+            </summary>
+            <typeparam name="T">The type of value to guard against.</typeparam>
+            <param name="guard">The Guard clause.</param>
+            <param name="value">The value to guard against.</param>
+            <param name="parameterName">Name of the parameter.</param>
+        </member>
+        <member name="T:Configuration.CascadingConfiguration">
+            <summary>
+            The cascading configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration,Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+            <param name="second">The second configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+            <param name="second">The second configuration.</param>
+            <param name="third">The third configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+            <param name="second">The second configuration.</param>
+            <param name="third">The third configuration.</param>
+            <param name="fourth">The fourth configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration,Configuration.IConfiguration)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="first">The first configuration.</param>
+            <param name="second">The second configuration.</param>
+            <param name="third">The third configuration.</param>
+            <param name="fourth">The fourth configuration.</param>
+            <param name="fifth">The fifth configuration.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.#ctor(System.Collections.Generic.IEnumerable{Configuration.IConfiguration})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.CascadingConfiguration"/> class.
+            </summary>
+            <param name="inOrder">The configurations in order of preference.</param>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="M:Configuration.CascadingConfiguration.Add(Configuration.IConfiguration)">
+            <summary>
+            Adds another configuration to the list of configurations to cascade through.
+            </summary>
+            <param name="configuration">The configuration to add.</param>
+            <returns>The cascading configuration.</returns>
+        </member>
+        <member name="T:Configuration.NetworkConfiguration">
+            <summary>
+            The network configuration.
+            </summary>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.#ctor(System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.NetworkConfiguration"/> class.
+            </summary>
+            <param name="configurationUriString">The configuration URI string.</param>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.#ctor(System.Uri)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.NetworkConfiguration"/> class.
+            </summary>
+            <param name="configurationUri">The configuration URI.</param>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.#ctor(Configuration.Sdk.IFileOperationsProxy,Configuration.Sdk.IWebOperationsProxy,System.Uri)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.NetworkConfiguration"/> class.
+            </summary>
+            <param name="fileOperationsProxy">The file operations proxy.</param>
+            <param name="webOperationsProxy">The web operations proxy.</param>
+            <param name="configurationUri">The configuration URI.</param>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.CreateProvider">
+            <summary>
+            Creates the configuration provider.
+            </summary>
+            <returns>The configuration provider.</returns>
+        </member>
+        <member name="M:Configuration.NetworkConfiguration.CacheToDisk(System.String)">
+            <summary>
+            Caches the contents of the configuration to the local disk with the specified filename.
+            </summary>
+            <param name="filename">The filename to use for the cache.</param>
+            <returns>The network configuration.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.IFileOperationsProxy">
+            <summary>
+            Exposes the public members of file operations proxy.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.IFileOperationsProxy.GetTempFileName">
+            <summary>
+            Creates a uniquely named, zero-byte temporary file on disk and returns the full path of that file.
+            </summary>
+            <returns>A <see cref="T:System.String"/> containing the full path of the temporary file.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.IFileOperationsProxy.FileExists(System.String)">
+            <summary>
+            Determines whether the specified file exists.
+            </summary>
+            <param name="path">The file to check.</param>
+            <returns>Returns <c>true</c> if the path contains the name of an existing file; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.IFileOperationsProxy.FileCopy(System.String,System.String,System.Boolean)">
+            <summary>
+            Copies an existing file to a new file. Overwriting a file of the same name is allowed.
+            </summary>
+            <param name="sourceFilename">The file to copy.</param>
+            <param name="destinationFilename">The name of the destination file. This cannot be a directory.</param>
+            <param name="overwrite">Set to <c>true</c> if the destination file can be overwritten; otherwise, <c>false</c>.</param>
+        </member>
+        <member name="T:Configuration.ConfigurationManager">
+            <summary>
+            Provides access to configuration data for applications.
+            </summary>
+        </member>
+        <member name="M:Configuration.ConfigurationManager.Use``1">
+            <summary>
+            Uses the specified configuration type.
+            </summary>
+            <typeparam name="T">The configuration type.</typeparam>
+        </member>
+        <member name="M:Configuration.ConfigurationManager.Use(Configuration.IConfiguration)">
+            <summary>
+            Uses the specified configuration.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:Configuration.ConfigurationManager.AppSettings">
+            <summary>
+            Gets the application settings for the current configuration provider.
+            </summary>
+            <value>The application settings.</value>
+        </member>
+        <member name="P:Configuration.ConfigurationManager.ConnectionStrings">
+            <summary>
+            Gets the connection strings for the current configuration provider.
+            </summary>
+            <value>The connection strings.</value>
+        </member>
+        <member name="T:Configuration.Sdk.CascadingConfigurationProvider">
+            <summary>
+            A cascading configuration provider.
+            </summary>
+            <remarks>This configuration provider inspects each of its configuration providers in order for a valid result.</remarks>
+        </member>
+        <member name="M:Configuration.Sdk.CascadingConfigurationProvider.#ctor(System.Collections.Generic.IEnumerable{Configuration.IConfigurationProvider},System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.CascadingConfigurationProvider"/> class.
+            </summary>
+            <param name="configurationProviders">The configuration providers.</param>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+        </member>
+        <member name="M:Configuration.Sdk.CascadingConfigurationProvider.GetAppSettingFromConfiguration(System.String)">
+            <summary>
+            Gets the application setting from the configuration.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.CascadingConfigurationProvider.GetConnectionStringFromConfiguration(System.String)">
+            <summary>
+            Gets the connection string from the configuration.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.AppSettings">
+            <summary>
+            The application settings indexed by their keys.
+            </summary>
+            <remarks>Provided for backwards compatibility with .NET configuration only.</remarks>
+        </member>
+        <member name="M:Configuration.Sdk.AppSettings.#ctor(Configuration.IConfigurationProvider)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.AppSettings"/> class.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+        </member>
+        <member name="P:Configuration.Sdk.AppSettings.Item(System.String)">
+            <summary>
+            Gets the application setting value associated with the specified key.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting value.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.ConnectionStringSettings">
+            <summary>
+            The connection string settings indexed by their names.
+            </summary>
+            <remarks>Provided for backwards compatibility with .NET configuration only.</remarks>
+        </member>
+        <member name="M:Configuration.Sdk.ConnectionStringSettings.#ctor(Configuration.IConfigurationProvider)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.ConnectionStringSettings"/> class.
+            </summary>
+            <param name="configProvider">The configuration provider.</param>
+        </member>
+        <member name="P:Configuration.Sdk.ConnectionStringSettings.Item(System.String)">
+            <summary>
+            Gets the connection string setting associated with the specified name.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string setting.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.DefaultAppSetting">
+            <summary>
+            The default type of application setting.
+            </summary>
+        </member>
+        <member name="T:Configuration.IAppSetting">
+            <summary>
+            Exposes the public members of an application setting.
+            </summary>
+        </member>
+        <member name="P:Configuration.IAppSetting.Key">
+            <summary>
+            Gets the key for the application setting.
+            </summary>
+            <value>The key for the application setting.</value>
+        </member>
+        <member name="P:Configuration.IAppSetting.Value">
+            <summary>
+            Gets the value of the application setting.
+            </summary>
+            <value>The value of the application setting.</value>
+        </member>
+        <member name="M:Configuration.Sdk.DefaultAppSetting.#ctor(System.String,System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.DefaultAppSetting"/> class.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <param name="value">The application setting value.</param>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultAppSetting.Key">
+            <summary>
+            Gets the key for the application setting.
+            </summary>
+            <value>The key for the application setting.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultAppSetting.Value">
+            <summary>
+            Gets the value of the application setting.
+            </summary>
+            <value>The value of the application setting.</value>
+        </member>
+        <member name="T:Configuration.Sdk.DefaultConnectionString">
+            <summary>
+            The default type of connection string.
+            </summary>
+        </member>
+        <member name="T:Configuration.IConnectionString">
+            <summary>
+            Exposes the public members of a connection string.
+            </summary>
+        </member>
+        <member name="P:Configuration.IConnectionString.Name">
+            <summary>
+            Gets the name of the connection string.
+            </summary>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="P:Configuration.IConnectionString.Value">
+            <summary>
+            Gets the connection string value.
+            </summary>
+            <value>The connection string value.</value>
+        </member>
+        <member name="P:Configuration.IConnectionString.ProviderName">
+            <summary>
+            Gets the name of the provider for the connection string.
+            </summary>
+            <value>The name of the provider for the connection string.</value>
+        </member>
+        <member name="M:Configuration.Sdk.DefaultConnectionString.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.DefaultConnectionString"/> class.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="value">The connection string value.</param>
+            <param name="providerName">The name of the provider for the connection string.</param>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionString.Name">
+            <summary>
+            Gets the name of the connection string.
+            </summary>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionString.Value">
+            <summary>
+            Gets the connection string value.
+            </summary>
+            <value>The connection string value.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionString.ProviderName">
+            <summary>
+            Gets the name of the provider for the connection string.
+            </summary>
+            <value>The name of the provider for the connection string.</value>
+        </member>
+        <member name="T:Configuration.Sdk.FileConfigurationProvider">
+            <summary>
+            A file configuration provider.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.FileConfigurationProvider.#ctor(Configuration.Sdk.IFileOperationsProxy,System.String,System.Action{Configuration.IAppSetting},System.Action{Configuration.IConnectionString})">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.FileConfigurationProvider"/> class.
+            </summary>
+            <param name="fileOperationsProxy">The file operations proxy.</param>
+            <param name="filename">The configuration filename.</param>
+            <param name="logAppSetting">The application setting logging action.</param>
+            <param name="logConnectionString">The connection string logging action.</param>
+        </member>
+        <member name="M:Configuration.Sdk.FileConfigurationProvider.GetAppSettingFromConfiguration(System.String)">
+            <summary>
+            Gets the application setting from the configuration.
+            </summary>
+            <param name="key">The key for the application setting.</param>
+            <returns>The application setting.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.FileConfigurationProvider.GetConnectionStringFromConfiguration(System.String)">
+            <summary>
+            Gets the connection string from the configuration.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="T:Configuration.Sdk.DefaultConnectionStringSetting">
+            <summary>
+            The default type of connection string setting.
+            </summary>
+            <remarks>Provided for backwards compatibility with .NET configuration only.</remarks>
+        </member>
+        <member name="T:Configuration.Sdk.IConnectionStringSetting">
+            <summary>
+            Exposes the public members of the connection string settings.
+            </summary>
+            <remarks>Provided for backwards compatibility with .NET configuration only.</remarks>
+        </member>
+        <member name="P:Configuration.Sdk.IConnectionStringSetting.Name">
+            <summary>
+            Gets the name of the connection string.
+            </summary>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="P:Configuration.Sdk.IConnectionStringSetting.ConnectionString">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <value>The connection string.</value>
+        </member>
+        <member name="P:Configuration.Sdk.IConnectionStringSetting.ProviderName">
+            <summary>
+            Gets the name of the provider for the connection string.
+            </summary>
+            <value>The name of the provider for the connection string.</value>
+        </member>
+        <member name="M:Configuration.Sdk.DefaultConnectionStringSetting.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Configuration.Sdk.DefaultConnectionStringSetting"/> class.
+            </summary>
+            <param name="name">The name of the connection string.</param>
+            <param name="connectionString">The connection string value.</param>
+            <param name="providerName">Name of the provider.</param>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionStringSetting.Name">
+            <summary>
+            Gets the name of the connection string.
+            </summary>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionStringSetting.ConnectionString">
+            <summary>
+            Gets the connection string value.
+            </summary>
+            <value>The connection string value.</value>
+        </member>
+        <member name="P:Configuration.Sdk.DefaultConnectionStringSetting.ProviderName">
+            <summary>
+            Gets the name of the provider for the connection string.
+            </summary>
+            <value>The name of the provider for the connection string.</value>
+        </member>
+        <member name="T:Configuration.Sdk.FileOperationsProxy">
+            <summary>
+            The file operations proxy.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.FileOperationsProxy.GetTempFileName">
+            <summary>
+            Creates a uniquely named, zero-byte temporary file on disk and returns the full path of that file.
+            </summary>
+            <returns>A <see cref="T:System.String"/> containing the full path of the temporary file.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.FileOperationsProxy.FileExists(System.String)">
+            <summary>
+            Determines whether the specified file exists.
+            </summary>
+            <param name="path">The file to check.</param>
+            <returns>Returns <c>true</c> if the path contains the name of an existing file; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Configuration.Sdk.FileOperationsProxy.FileCopy(System.String,System.String,System.Boolean)">
+            <summary>
+            Copies an existing file to a new file. Overwriting a file of the same name is allowed.
+            </summary>
+            <param name="sourceFilename">The file to copy.</param>
+            <param name="destinationFilename">The name of the destination file. This cannot be a directory.</param>
+            <param name="overwrite">Set to <c>true</c> if the destination file can be overwritten; otherwise, <c>false</c>.</param>
+        </member>
+        <member name="T:Configuration.Sdk.IWebOperationsProxy">
+            <summary>
+            Exposes the public members of web operations proxy.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.IWebOperationsProxy.DownloadFile(System.Uri,System.String)">
+            <summary>
+            Downloads the resource with the specified URI to a local file.
+            </summary>
+            <param name="address">The URI from which to download data.</param>
+            <param name="fileName">The name of the local file that is to receive the data.</param>
+        </member>
+        <member name="T:Configuration.Sdk.WebOperationsProxy">
+            <summary>
+            The web operations proxy.
+            </summary>
+        </member>
+        <member name="M:Configuration.Sdk.WebOperationsProxy.DownloadFile(System.Uri,System.String)">
+            <summary>
+            Downloads the resource with the specified URI to a local file.
+            </summary>
+            <param name="address">The URI from which to download data.</param>
+            <param name="fileName">The name of the local file that is to receive the data.</param>
+        </member>
+        <member name="T:System.Collections.Concurrent.ConcurrentDictionary`2">
+            <summary>
+            Represents a thread-safe collection of keys and values. 
+            </summary> 
+            <typeparam name="TKey">The type of the keys in the dictionary.</typeparam>
+            <typeparam name="TValue">The type of the values in the dictionary.</typeparam> 
+            <remarks>
+            All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> are thread-safe and may be used
+            concurrently from multiple threads.
+            </remarks> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> 
+            class that is empty, has the default concurrency level, has the default initial capacity, and
+            uses the default comparer for the key type. 
+            </summary> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            class that is empty, has the specified concurrency level and capacity, and uses the default 
+            comparer for the key type.
+            </summary> 
+            <param name="concurrencyLevel">The estimated number of threads that will update the 
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> concurrently.</param>
+            <param name="capacity">The initial number of elements that the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            can contain.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="concurrencyLevel"/> is
+            less than 1.</exception> 
+            <exception cref="T:System.ArgumentOutOfRangeException"> <paramref name="capacity"/> is less than
+            0.</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})">
+            <summary> 
+            Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            class that contains elements copied from the specified <see cref="T:System.Collections.IEnumerable{KeyValuePair{TKey,TValue}}"/>, has the default concurrency
+            level, has the default initial capacity, and uses the default comparer for the key type. 
+            </summary>
+            <param name="collection">The <see cref="T:System.Collections.IEnumerable{KeyValuePair{TKey,TValue}}"/> whose elements are copied to 
+            the new
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</param> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="collection"/> is a null reference
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="collection"/> contains one or more
+            duplicate keys.</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+            <summary> 
+            Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            class that is empty, has the specified concurrency level and capacity, and uses the specified 
+            <see cref="T:System.Collections.Generic.IEqualityComparer{TKey}"/>.
+            </summary>
+            <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer{TKey}"/>
+            implementation to use when comparing keys.</param> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="comparer"/> is a null reference
+            (Nothing in Visual Basic).</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}},System.Collections.Generic.IEqualityComparer{`0})">
+            <summary> 
+            Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            class that contains elements copied from the specified <see cref="T:System.Collections.IEnumerable"/>, has the default concurrency level, has the default
+            initial capacity, and uses the specified 
+            <see cref="T:System.Collections.Generic.IEqualityComparer{TKey}"/>.
+            </summary> 
+            <param name="collection">The <see cref="T:System.Collections.IEnumerable{KeyValuePair{TKey,TValue}}"/> whose elements are copied to
+            the new 
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</param>
+            <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer{TKey}"/>
+            implementation to use when comparing keys.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="collection"/> is a null reference 
+            (Nothing in Visual Basic). -or-
+            <paramref name="comparer"/> is a null reference (Nothing in Visual Basic). 
+            </exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}},System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            class that contains elements copied from the specified <see cref="T:System.Collections.IEnumerable"/>, 
+            has the specified concurrency level, has the specified initial capacity, and uses the specified
+            <see cref="T:System.Collections.Generic.IEqualityComparer{TKey}"/>. 
+            </summary> 
+            <param name="concurrencyLevel">The estimated number of threads that will update the
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> concurrently.</param> 
+            <param name="collection">The <see cref="T:System.Collections.IEnumerable{KeyValuePair{TKey,TValue}}"/> whose elements are copied to the new
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</param>
+            <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer{TKey}"/> implementation to use
+            when comparing keys.</param> 
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="collection"/> is a null reference (Nothing in Visual Basic). 
+            -or- 
+            <paramref name="comparer"/> is a null reference (Nothing in Visual Basic).
+            </exception> 
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="concurrencyLevel"/> is less than 1.
+            </exception>
+            <exception cref="T:System.ArgumentException"><paramref name="collection"/> contains one or more duplicate keys.</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            class that is empty, has the specified concurrency level, has the specified initial capacity, and 
+            uses the specified <see cref="T:System.Collections.Generic.IEqualityComparer{TKey}"/>.
+            </summary> 
+            <param name="concurrencyLevel">The estimated number of threads that will update the 
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> concurrently.</param>
+            <param name="capacity">The initial number of elements that the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            can contain.</param>
+            <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer{TKey}"/>
+            implementation to use when comparing keys.</param> 
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="concurrencyLevel"/> is less than 1. -or- 
+            <paramref name="capacity"/> is less than 0. 
+            </exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="comparer"/> is a null reference 
+            (Nothing in Visual Basic).</exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryAdd(`0,`1)">
+            <summary> 
+            Attempts to add the specified key and value to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.
+            </summary> 
+            <param name="key">The key of the element to add.</param>
+            <param name="value">The value of the element to add. The value can be a null reference (Nothing
+            in Visual Basic) for reference types.</param>
+            <returns>true if the key/value pair was added to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            successfully; otherwise, false.</returns> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is null reference 
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.OverflowException">The <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> 
+            contains too many elements.</exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.ContainsKey(`0)">
+            <summary> 
+            Determines whether the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> contains the specified
+            key.
+            </summary>
+            <param name="key">The key to locate in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</param>
+            <returns>true if the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> contains an element with 
+            the specified key; otherwise, false.</returns> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference
+            (Nothing in Visual Basic).</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryRemove(`0,`1@)">
+            <summary> 
+            Attempts to remove and return the the value with the specified key from the
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.
+            </summary>
+            <param name="key">The key of the element to remove and return.</param> 
+            <param name="value">When this method returns, <paramref name="value"/> contains the object removed from the
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> or the default value of <typeparamref name="TValue"/> 
+            if the operation failed.</param>
+            <returns>true if an object was removed successfully; otherwise, false.</returns> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference
+            (Nothing in Visual Basic).</exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryRemoveInternal(`0,`1@,System.Boolean,`1)">
+            <summary>
+            Removes the specified key from the dictionary if it exists and returns its associated value.
+            If matchValue flag is set, the key will be removed only if is associated with a particular
+            value. 
+            </summary>
+            <param name="key">The key to search for and remove if it exists.</param> 
+            <param name="value">The variable into which the removed value, if found, is stored.</param> 
+            <param name="matchValue">Whether removal of the key is conditional on its value.</param>
+            <param name="oldValue">The conditional value to compare against if <paramref name="matchValue"/> is true</param> 
+            <returns></returns>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryGetValue(`0,`1@)">
+            <summary>
+            Attempts to get the value associated with the specified key from the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>. 
+            </summary>
+            <param name="key">The key of the value to get.</param> 
+            <param name="value">When this method returns, <paramref name="value"/> contains the object from
+            the
+            <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> with the spedified key or the default value of
+            <typeparamref name="TValue"/>, if the operation failed.</param> 
+            <returns>true if the key was found in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>;
+            otherwise, false.</returns> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference 
+            (Nothing in Visual Basic).</exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryUpdate(`0,`1,`1)">
+            <summary>
+            Compares the existing value for the specified key with a specified value, and if they’re equal,
+            updates the key with a third value. 
+            </summary>
+            <param name="key">The key whose value is compared with <paramref name="comparisonValue"/> and 
+            possibly replaced.</param> 
+            <param name="newValue">The value that replaces the value of the element with <paramref
+            name="key"/> if the comparison results in equality.</param> 
+            <param name="comparisonValue">The value that is compared to the value of the element with
+            <paramref name="key"/>.</param>
+            <returns>true if the value with <paramref name="key"/> was equal to <paramref
+            name="comparisonValue"/> and replaced with <paramref name="newValue"/>; otherwise, 
+            false.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null 
+            reference.</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.Clear">
+            <summary> 
+            Removes all keys and values from the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.
+            </summary> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+            <summary>
+            Copies the elements of the <see cref="T:System.Collections.Generic.ICollection"/> to an array of 
+            type <see cref="T:System.Collections.Generic.KeyValuePair{TKey,TValue}"/>, starting at the
+            specified array index.
+            </summary>
+            <param name="array">The one-dimensional array of type <see 
+            cref="T:System.Collections.Generic.KeyValuePair{TKey,TValue}"/>
+            that is the destination of the <see 
+            cref="T:System.Collections.Generic.KeyValuePair{TKey,TValue}"/> elements copied from the <see 
+            cref="T:System.Collections.ICollection"/>. The array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in <paramref name="array"/> at which copying 
+            begins.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="array"/> is a null reference
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index"/> is less than 
+            0.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="index"/> is equal to or greater than 
+            the length of the <paramref name="array"/>. -or- The number of elements in the source <see 
+            cref="T:System.Collections.ICollection"/>
+            is greater than the available space from <paramref name="index"/> to the end of the destination 
+            <paramref name="array"/>.</exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.ToArray">
+            <summary>
+            Copies the key and value pairs stored in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> to a 
+            new array. 
+            </summary>
+            <returns>A new array containing a snapshot of key and value pairs copied from the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</returns>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.CopyToPairs(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+             <summary>
+             Copy dictionary contents to an array - shared implementation between ToArray and CopyTo.
+            
+             Important: the caller must hold all locks in m_locks before calling CopyToPairs. 
+             </summary>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.CopyToEntries(System.Collections.DictionaryEntry[],System.Int32)">
+             <summary>
+             Copy dictionary contents to an array - shared implementation between ToArray and CopyTo.
+            
+             Important: the caller must hold all locks in m_locks before calling CopyToEntries. 
+             </summary>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.CopyToObjects(System.Object[],System.Int32)">
+             <summary>
+             Copy dictionary contents to an array - shared implementation between ToArray and CopyTo.
+            
+             Important: the caller must hold all locks in m_locks before calling CopyToObjects. 
+             </summary>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetEnumerator">
+            <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</summary>
+            <returns>An enumerator for the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</returns>
+            <remarks> 
+            The enumerator returned from the dictionary is safe to use concurrently with
+            reads and writes to the dictionary, however it does not represent a moment-in-time snapshot 
+            of the dictionary.  The contents exposed through the enumerator may contain modifications 
+            made to the dictionary after <see cref="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetEnumerator"/> was called.
+            </remarks> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryAddInternal(`0,`1,System.Boolean,System.Boolean,`1@)">
+            <summary>
+            Shared internal implementation for inserts and updates.
+            If key exists, we always return false; and if updateIfExists == true we force update with value;
+            If key doesn't exist, we always add value and return true; 
+            </summary>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,System.Func{`0,`1})">
+            <summary>
+            Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> 
+            if the key does not already exist. 
+            </summary>
+            <param name="key">The key of the element to add.</param> 
+            <param name="valueFactory">The function used to generate a value for the key</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="valueFactory"/> is a null reference 
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.OverflowException">The dictionary contains too many 
+            elements.</exception> 
+            <returns>The value for the key.  This will be either the existing value for the key if the
+            key is already in the dictionary, or the new value for the key as returned by valueFactory 
+            if the key was not in the dictionary.</returns>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,`1)">
+            <summary> 
+            Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            if the key does not already exist. 
+            </summary>
+            <param name="key">The key of the element to add.</param>
+            <param name="value">the value to be added, if the key does not already exist</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference 
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.OverflowException">The dictionary contains too many 
+            elements.</exception> 
+            <returns>The value for the key.  This will be either the existing value for the key if the
+            key is already in the dictionary, or the new value if the key was not in the dictionary.</returns> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(`0,System.Func{`0,`1},System.Func{`0,`1,`1})">
+            <summary>
+            Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> if the key does not already
+            exist, or updates a key/value pair in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> if the key
+            already exists. 
+            </summary>
+            <param name="key">The key to be added or whose value should be updated</param> 
+            <param name="addValueFactory">The function used to generate a value for an absent key</param> 
+            <param name="updateValueFactory">The function used to generate a new value for an existing key
+            based on the key's existing value</param> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="addValueFactory"/> is a null reference
+            (Nothing in Visual Basic).</exception> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="updateValueFactory"/> is a null reference
+            (Nothing in Visual Basic).</exception> 
+            <exception cref="T:System.OverflowException">The dictionary contains too many 
+            elements.</exception>
+            <returns>The new value for the key.  This will be either be the result of addValueFactory (if the key was 
+            absent) or the result of updateValueFactory (if the key was present).</returns>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(`0,`1,System.Func{`0,`1,`1})">
+            <summary>
+            Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> if the key does not already 
+            exist, or updates a key/value pair in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> if the key 
+            already exists.
+            </summary> 
+            <param name="key">The key to be added or whose value should be updated</param>
+            <param name="addValue">The value to be added for an absent key</param>
+            <param name="updateValueFactory">The function used to generate a new value for an existing key based on
+            the key's existing value</param> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference
+            (Nothing in Visual Basic).</exception> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="updateValueFactory"/> is a null reference 
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.OverflowException">The dictionary contains too many 
+            elements.</exception>
+            <returns>The new value for the key.  This will be either be the result of addValueFactory (if the key was
+            absent) or the result of updateValueFactory (if the key was present).</returns>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Add(`0,`1)">
+            <summary>
+            Adds the specified key and value to the <see cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/>. 
+            </summary>
+            <param name="key">The object to use as the key of the element to add.</param> 
+            <param name="value">The object to use as the value of the element to add.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.OverflowException">The dictionary contains too many 
+            elements.</exception>
+            <exception cref="T:System.ArgumentException"> 
+            An element with the same key already exists in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Remove(`0)">
+            <summary>
+            Removes the element with the specified key from the <see 
+            cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/>.
+            </summary>
+            <param name="key">The key of the element to remove.</param>
+            <returns>true if the element is successfully remove; otherwise false. This method also returns 
+            false if
+            <paramref name="key"/> was not found in the original <see 
+            cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/>. 
+            </returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference 
+            (Nothing in Visual Basic).</exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary> 
+            Adds the specified value to the <see cref="T:System.Collections.Generic.ICollection{TValue}"/>
+            with the specified key. 
+            </summary>
+            <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair{TKey,TValue}"/>
+            structure representing the key and value to add to the <see
+            cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>.</param> 
+            <exception cref="T:System.ArgumentNullException">The <paramref name="keyValuePair"/> of <paramref
+            name="keyValuePair"/> is null.</exception> 
+            <exception cref="T:System.OverflowException">The <see 
+            cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>
+            contains too many elements.</exception> 
+            <exception cref="T:System.ArgumentException">An element with the same key already exists in the
+            <see cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/></exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>
+            Determines whether the <see cref="T:System.Collections.Generic.ICollection{TKey,TValue}"/> 
+            contains a specific key and value.
+            </summary>
+            <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair{TKey,TValue}"/>
+            structure to locate in the <see 
+            cref="T:System.Collections.Generic.ICollection{TValue}"/>.</param>
+            <returns>true if the <paramref name="keyValuePair"/> is found in the <see 
+            cref="T:System.Collections.Generic.ICollection{TKey,TValue}"/>; otherwise, false.</returns> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>
+            Removes a key and value from the dictionary. 
+            </summary>
+            <param name="keyValuePair">The <see 
+            cref="T:System.Collections.Generic.KeyValuePair{TKey,TValue}"/> 
+            structure representing the key and value to remove from the <see
+            cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>.</param> 
+            <returns>true if the key and value represented by <paramref name="keyValuePair"/> is successfully
+            found and removed; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentNullException">The Key property of <paramref
+            name="keyValuePair"/> is a null reference (Nothing in Visual Basic).</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IEnumerable#GetEnumerator">
+            <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</summary> 
+            <returns>An enumerator for the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</returns>
+            <remarks>
+            The enumerator returned from the dictionary is safe to use concurrently with
+            reads and writes to the dictionary, however it does not represent a moment-in-time snapshot 
+            of the dictionary.  The contents exposed through the enumerator may contain modifications
+            made to the dictionary after <see cref="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetEnumerator"/> was called. 
+            </remarks> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Add(System.Object,System.Object)">
+            <summary>
+            Adds the specified key and value to the dictionary. 
+            </summary>
+            <param name="key">The object to use as the key.</param>
+            <param name="value">The object to use as the value.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference 
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.OverflowException">The dictionary contains too many 
+            elements.</exception> 
+            <exception cref="T:System.ArgumentException">
+            <paramref name="key"/> is of a type that is not assignable to the key type <typeparamref 
+            name="TKey"/> of the <see cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>. -or-
+            <paramref name="value"/> is of a type that is not assignable to <typeparamref name="TValue"/>,
+            the type of values in the <see cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>.
+            -or- A value with the same key already exists in the <see 
+            cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>.
+            </exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Contains(System.Object)">
+            <summary> 
+            Gets whether the <see cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/> contains an
+            element with the specified key. 
+            </summary>
+            <param name="key">The key to locate in the <see
+            cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/>.</param>
+            <returns>true if the <see cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/> contains 
+            an element with the specified key; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentNullException"> <paramref name="key"/> is a null reference 
+            (Nothing in Visual Basic).</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#GetEnumerator">
+            <summary>Provides an <see cref="T:System.Collections.Generics.IDictionaryEnumerator"/> for the 
+            <see cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/>.</summary> 
+            <returns>An <see cref="T:System.Collections.Generics.IDictionaryEnumerator"/> for the <see
+            cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/>.</returns> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Remove(System.Object)">
+            <summary> 
+            Removes the element with the specified key from the <see
+            cref="T:System.Collections.IDictionary"/>. 
+            </summary>
+            <param name="key">The key of the element to remove.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference
+            (Nothing in Visual Basic).</exception> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the elements of the <see cref="T:System.Collections.ICollection"/> to an array, starting
+            at the specified array index. 
+            </summary>
+            <param name="array">The one-dimensional array that is the destination of the elements copied from 
+            the <see cref="T:System.Collections.ICollection"/>. The array must have zero-based 
+            indexing.</param>
+            <param name="index">The zero-based index in <paramref name="array"/> at which copying 
+            begins.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="array"/> is a null reference
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index"/> is less than 
+            0.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="index"/> is equal to or greater than 
+            the length of the <paramref name="array"/>. -or- The number of elements in the source <see 
+            cref="T:System.Collections.ICollection"/>
+            is greater than the available space from <paramref name="index"/> to the end of the destination 
+            <paramref name="array"/>.</exception>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.GrowTable(System.Collections.Concurrent.ConcurrentDictionary{`0,`1}.Node[])">
+            <summary> 
+            Replaces the internal table with a larger one. To prevent multiple threads from resizing the 
+            table as a result of ----s, the table of buckets that was deemed too small is passed in as
+            an argument to GrowTable(). GrowTable() obtains a lock, and then checks whether the bucket 
+            table has been replaced in the meantime or not.
+            </summary>
+            <param name="buckets">Reference to the bucket table that was deemed too small.</param>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetBucketAndLockNo(System.Int32,System.Int32@,System.Int32@,System.Int32)">
+            <summary>
+            Computes the bucket and lock number for a particular key. 
+            </summary> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.AcquireAllLocks(System.Int32@)">
+            <summary> 
+            Acquires all locks for this hash table, and increments locksAcquired by the number
+            of locks that were successfully acquired. The locks are acquired in an increasing
+            order.
+            </summary> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.AcquireLocks(System.Int32,System.Int32,System.Int32@)">
+            <summary> 
+            Acquires a contiguous range of locks for this hash table, and increments locksAcquired
+            by the number of locks that were successfully acquired. The locks are acquired in an
+            increasing order.
+            </summary> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.ReleaseLocks(System.Int32,System.Int32)">
+            <summary> 
+            Releases a contiguous range of locks.
+            </summary> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetKeys">
+            <summary>
+            Gets a collection containing the keys in the dictionary. 
+            </summary>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetValues">
+            <summary>
+            Gets a collection containing the values in the dictionary.
+            </summary>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.Assert(System.Boolean)">
+            <summary>
+            A helper method for asserts. 
+            </summary>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetResource(System.String)">
+            <summary>
+            A helper function to obtain the string for a particular resource key.
+            </summary>
+            <param name="key"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.OnSerializing(System.Runtime.Serialization.StreamingContext)">
+            <summary> 
+            Get the data array to be serialized
+            </summary> 
+        </member>
+        <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.OnDeserialized(System.Runtime.Serialization.StreamingContext)">
+            <summary> 
+            Construct the dictionary from a previously seiralized one
+            </summary> 
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.Item(`0)">
+            <summary>
+            Gets or sets the value associated with the specified key. 
+            </summary> 
+            <param name="key">The key of the value to get or set.</param>
+            <value>The value associated with the specified key. If the specified key is not found, a get 
+            operation throws a
+            <see cref="T:Sytem.Collections.Generic.KeyNotFoundException"/>, and a set operation creates a new
+            element with the specified key.</value>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference 
+            (Nothing in Visual Basic).</exception>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and 
+            <paramref name="key"/> 
+            does not exist in the collection.</exception>
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.Count">
+            <summary>
+            Gets the number of key/value pairs contained in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.
+            </summary> 
+            <exception cref="T:System.OverflowException">The dictionary contains too many
+            elements.</exception> 
+            <value>The number of key/value paris contained in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>.</value>
+            <remarks>Count has snapshot semantics and represents the number of items in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/>
+            at the moment when Count was accessed.</remarks>
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.IsEmpty">
+            <summary> 
+            Gets a value that indicates whether the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> is empty. 
+            </summary>
+            <value>true if the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> is empty; otherwise, 
+            false.</value>
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.Keys">
+            <summary>
+            Gets a collection containing the keys in the <see 
+            cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>.
+            </summary>
+            <value>An <see cref="T:System.Collections.Generic.ICollection{TKey}"/> containing the keys in the
+            <see cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>.</value> 
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.Values">
+            <summary>
+            Gets a collection containing the values in the <see
+            cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>.
+            </summary> 
+            <value>An <see cref="T:System.Collections.Generic.ICollection{TValue}"/> containing the values in
+            the 
+            <see cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>.</value> 
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#IsReadOnly">
+            <summary> 
+            Gets a value indicating whether the dictionary is read-only.
+            </summary>
+            <value>true if the <see cref="T:System.Collections.Generic.ICollection{TKey,TValue}"/> is
+            read-only; otherwise, false. For <see 
+            cref="T:System.Collections.Generic.Dictionary{TKey,TValue}"/>, this property always returns
+            false.</value> 
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#IsFixedSize">
+            <summary> 
+            Gets a value indicating whether the <see 
+            cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/> has a fixed size.
+            </summary> 
+            <value>true if the <see cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/> has a
+            fixed size; otherwise, false. For <see
+            cref="T:System.Collections.Generic.ConcurrentDictionary{TKey,TValue}"/>, this property always
+            returns false.</value> 
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#IsReadOnly">
+            <summary>
+            Gets a value indicating whether the <see
+            cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/> is read-only.
+            </summary> 
+            <value>true if the <see cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/> is
+            read-only; otherwise, false. For <see 
+            cref="T:System.Collections.Generic.ConcurrentDictionary{TKey,TValue}"/>, this property always 
+            returns false.</value>
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Keys">
+            <summary>
+            Gets an <see cref="T:System.Collections.ICollection"/> containing the keys of the <see 
+            cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/>. 
+            </summary>
+            <value>An <see cref="T:System.Collections.ICollection"/> containing the keys of the <see 
+            cref="T:System.Collections.Generic.IDictionary{TKey,TValue}"/>.</value>
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Values">
+            <summary> 
+            Gets an <see cref="T:System.Collections.ICollection"/> containing the values in the <see
+            cref="T:System.Collections.IDictionary"/>. 
+            </summary>
+            <value>An <see cref="T:System.Collections.ICollection"/> containing the values in the <see
+            cref="T:System.Collections.IDictionary"/>.</value>
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Item(System.Object)">
+            <summary> 
+            Gets or sets the value associated with the specified key.
+            </summary>
+            <param name="key">The key of the value to get or set.</param>
+            <value>The value associated with the specified key, or a null reference (Nothing in Visual Basic) 
+            if <paramref name="key"/> is not in the dictionary or <paramref name="key"/> is of a type that is
+            not assignable to the key type <typeparamref name="TKey"/> of the <see 
+            cref="T:System.Collections.Generic.ConcurrentDictionary{TKey,TValue}"/>.</value> 
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference
+            (Nothing in Visual Basic).</exception> 
+            <exception cref="T:System.ArgumentException">
+            A value is being assigned, and <paramref name="key"/> is of a type that is not assignable to the
+            key type <typeparamref name="TKey"/> of the <see
+            cref="T:System.Collections.Generic.ConcurrentDictionary{TKey,TValue}"/>. -or- A value is being 
+            assigned, and <paramref name="key"/> is of a type that is not assignable to the value type
+            <typeparamref name="TValue"/> of the <see 
+            cref="T:System.Collections.Generic.ConcurrentDictionary{TKey,TValue}"/> 
+            </exception>
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#ICollection#IsSynchronized">
+            <summary>
+            Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection"/> is 
+            synchronized with the SyncRoot. 
+            </summary>
+            <value>true if access to the <see cref="T:System.Collections.ICollection"/> is synchronized 
+            (thread safe); otherwise, false. For <see
+            cref="T:System.Collections.Concurrent.ConcurrentDictionary{TKey,TValue}"/>, this property always
+            returns false.</value>
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#ICollection#SyncRoot">
+            <summary> 
+            Gets an object that can be used to synchronize access to the <see
+            cref="T:System.Collections.ICollection"/>. This property is not supported.
+            </summary>
+            <exception cref="T:System.NotSupportedException">The SyncRoot property is not supported.</exception> 
+        </member>
+        <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.DefaultConcurrencyLevel">
+            <summary> 
+            The number of concurrent writes for which to optimize by default.
+            </summary>
+        </member>
+        <member name="T:System.Collections.Concurrent.ConcurrentDictionary`2.Node">
+            <summary>
+            A node in a singly-linked list representing a particular hash table bucket. 
+            </summary>
+        </member>
+        <member name="T:System.Collections.Concurrent.ConcurrentDictionary`2.DictionaryEnumerator">
+            <summary>
+            A private class to represent enumeration over the dictionary that implements the 
+            IDictionaryEnumerator interface. 
+            </summary>
+        </member>
+    </members>
+</doc>

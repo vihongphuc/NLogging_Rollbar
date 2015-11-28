@@ -1,0 +1,6 @@
+C:\Users\phuc\Documents\Examples\NLogging\Contract\bin\Debug\Contract.dll
+C:\Users\phuc\Documents\Examples\NLogging\Contract\bin\Debug\Contract.pdb
+C:\Users\phuc\Documents\Examples\NLogging\Contract\bin\Debug\Newtonsoft.Json.dll
+C:\Users\phuc\Documents\Examples\NLogging\Contract\bin\Debug\Newtonsoft.Json.xml
+C:\Users\phuc\Documents\Examples\NLogging\Contract\obj\Debug\Contract.dll
+C:\Users\phuc\Documents\Examples\NLogging\Contract\obj\Debug\Contract.pdb

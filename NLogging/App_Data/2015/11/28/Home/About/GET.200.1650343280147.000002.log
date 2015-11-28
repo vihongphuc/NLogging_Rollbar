@@ -1,0 +1,32 @@
+﻿200 OK GET /Home/About
+Start    : 2015-11-28 16:50:34.3280147
+End      : 2015-11-28 16:50:34.3400159
+Duration : 11
+LogLevel : Debug
+
+Request Information:
+    Controller: Home
+    Action: About
+
+Request Headers:
+    Connection: keep-alive
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+    Accept-Encoding: gzip, deflate, sdch
+    Accept-Language: en,en-US;q=0.8,vi;q=0.6,tr;q=0.4
+    Cookie: ASP.NET_SessionId=uzhbo41o11whm5t3efksy11o; __RequestVerificationToken=PDNGIY2DJW4DIFZ5jvqHh7tQQOp5GDIhdCqM9VO_ylpW0QaHwCHXoNufRfRcG21NEgrm9ZTC_UurJ3wMuS2Dwv4DYo0HW5Do4AkKcFqeCuU1; __utma=1.1684589236.1444314036.1448469804.1448697185.8; __utmc=1; __utmz=1.1448697185.8.8.utmcsr=localhost:61804|utmccn=(referral)|utmcmd=referral|utmcct=/
+    Host: localhost:63278
+    Referer: http://localhost:63278/
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    Upgrade-Insecure-Requests: 1
+
+Request Content:
+
+===========================================================
+
+Response Headers:
+    Server: Microsoft-IIS/10.0
+    X-AspNetMvc-Version: 5.2
+    Cache-Control: private
+    X-AspNet-Version: 4.0.30319
+    Content-Type: text/html; charset=utf-8
+

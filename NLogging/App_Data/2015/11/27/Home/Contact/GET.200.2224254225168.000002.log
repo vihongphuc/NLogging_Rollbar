@@ -1,0 +1,32 @@
+﻿200 OK GET /Home/Contact
+Start    : 2015-11-27 22:24:25.4225168
+End      : 2015-11-27 22:24:25.4505140
+Duration : 27
+LogLevel : Debug
+
+Request Information:
+    Controller: Home
+    Action: Contact
+
+Request Headers:
+    Connection: keep-alive
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+    Accept-Encoding: gzip, deflate, sdch
+    Accept-Language: en,en-US;q=0.8,vi;q=0.6,tr;q=0.4
+    Cookie: __utma=1.1684589236.1444314036.1448365516.1448469804.7; __utmz=1.1448469804.7.7.utmcsr=localhost:61804|utmccn=(referral)|utmcmd=referral|utmcct=/; __RequestVerificationToken=VWt3CK2jpyTVKsPy5lyjuCMBpmeTmUR5Xck7Ko-mx1tM0QYRuFYfVWPi1D4Is_Z2scpDqnE9ek-03Imd93fevd4eLe9YSGycvEfh6oPyq581; ASP.NET_SessionId=rvjcuu2shthmld1am1j5bjho
+    Host: localhost:63278
+    Referer: http://localhost:63278/
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    Upgrade-Insecure-Requests: 1
+
+Request Content:
+
+===========================================================
+
+Response Headers:
+    Server: Microsoft-IIS/10.0
+    X-AspNetMvc-Version: 5.2
+    Cache-Control: private
+    X-AspNet-Version: 4.0.30319
+    Content-Type: text/html; charset=utf-8
+

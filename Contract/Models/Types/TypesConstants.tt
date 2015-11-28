@@ -1,0 +1,60 @@
+﻿using System.Linq;
+
+<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+namespace Models
+{
+<#
+	var files = Directory.GetFiles(Host.ResolvePath(""), "*.cs").Where(c => c.EndsWith("Type.cs") || c.EndsWith("Key.cs"));
+	foreach (var f in files)
+	{
+		var lines = File.ReadAllLines(f);
+		bool stateOpen = false;
+		string enType = null;
+		foreach (var line in lines)
+		{
+			if (line.Trim().StartsWith("public enum "))
+			{
+				stateOpen = true;
+				var nLine = line.Trim().Substring("public enum ".Length);
+				enType = nLine;
+#>
+	public static class <#= nLine #>Array
+	{
+        public static <#= nLine #>[] Values = System.Enum.GetValues(typeof(<#= nLine #>))
+													  .Cast<<#= nLine #>>()
+													  .OrderBy(c => c)
+													  .ToArray();
+        public static string[] Strings = System.Enum.GetValues(typeof(<#= nLine #>))
+													 .Cast<<#= nLine #>>()
+													 .OrderBy(c => c)
+													 .Select(c => c.ToString())
+													 .ToArray();
+	}
+
+	public static class <#= nLine #>String
+	{
+<#
+			}
+			else if (line.Trim() == "}" && stateOpen)
+			{
+				stateOpen = false;
+#>
+	}
+<#
+			}
+			else if (line.Trim().Length > 1 && stateOpen)
+			{
+#>
+		public const string <#= line.Trim().Split(' ')[0].Replace(",", "") #> = "<#= line.Trim().Split(' ')[0].Replace(",", "") #>";
+<#
+			}
+		}
+	}
+#>
+}
